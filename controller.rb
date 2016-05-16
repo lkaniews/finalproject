@@ -5,6 +5,9 @@ get '/' do
 	erb :index
 end 
 
-get '/' do 
-	input = Input.new(params[:num])
+post '/' do 
+	User = User.new
+	Game = Game.new (user)
+	game.subtraction(miles)
 end
+

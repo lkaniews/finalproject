@@ -1,13 +1,19 @@
-class Input 
-	def initialize (num)
-		@num = num
-		@initial = 2133
+class User
+	attr_accessor :total 
+	def initialize 
+		@total = 2133
+			@miles = miles
 	end
 end
 
-class Distance
-	def subtraction
-		@total - @num 
+class Game
+	def initialize (user)
+		@user = user
 	end
-
+	def subtraction (miles)
+		@user.total -= miles 
+	end
 end
+
+
+

@@ -1,13 +1,14 @@
 require 'sinatra'
-
+require_relative 'models/running.rb'
 
 get '/' do 
 	erb :index
 end 
 
 post '/' do 
-	User = User.new
-	Game = Game.new (user)
-	game.subtraction(miles)
+	user = User.new (params[:miles])
+	game = Game.new (user)
+	@answer = game.subtraction 
+	erb :results
 end
 

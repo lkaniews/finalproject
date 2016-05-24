@@ -1,0 +1,6 @@
+post '/' do 
+	user = User.new (params[:miles])
+	game = Game.new (user)
+	@answer = game.subtraction 
+	erb :results
+end

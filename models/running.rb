@@ -6,7 +6,12 @@ class Game
 	def subtraction(miles)
 		@total -= miles.to_i
 	end
+	#def restart 
+	#	if @total == 0 then @total += 2133
+		#end
+	#end 
 end
+
 
 
 
